@@ -1,13 +1,30 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Galary from '@/components/Galary'
+import Investment from '@/components/Investment'
+import About from "@/components/About";
+import Opportunity from "@/components/Opportunity";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
+
+
+
+
 
 export default function Home() {
   return (
-    <main className="">
-      <div>
-        <h1>Hello PortFolio</h1>
-        <Hero/>
-      </div>
+    <main className="overflow-x-hidden">
+      <Hero/>
+      <Galary/>
+      <Investment/>
+      <About/>
+      <Opportunity/>
+      <Testimonials/>
+      <FAQ/>
+      <Footer/>
+
+
+
     </main>
   );
 }
